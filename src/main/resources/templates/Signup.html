@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container{
+            width: 400px;
+            background-color: white;
+            padding: 25px;
+            margin: 50px auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        h2{
+            text-align: center;
+            color: #333;
+        }
+
+        label{
+            font-weight: bold;
+        }
+
+		input[type=text],
+		input[type=email],
+		input[type=password],
+		textarea,
+		select{
+
+		    width:100%;
+		    padding:10px;
+		    margin-top:5px;
+		    margin-bottom:15px;
+		}
+        .gender{
+            width: auto;
+        }
+
+        button{
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Registration Form</h2>
+
+        <form action="/register" method="post">
+
+            <label>Full Name</label>
+            <input type="text" name="FullName" placeholder="Enter your name">
+
+            <label>Email</label>
+            <input type="email" name="Email" placeholder="Enter your email">
+
+            <label>Password</label>
+            <input type="password" name="Password" placeholder="Enter password">
+
+            <label>Phone Number</label>
+            <input type="text"name="PhoneNumber" placeholder="Enter phone number">
+
+			<label>Gender</label><br></br>
+
+			<input type="radio" name="Gender" class="Gender" value="Male"> Male
+
+			<input type="radio" name="Gender" class="Gender" value="Female"> Female
+
+			<input type="radio" name="Gender" class="Gender" value="Other"> Other
+
+			<br></br>
+
+
+            <label>Country</label>
+
+            <select name="Country">
+                <option>India</option>
+                <option>USA</option>
+                <option>UK</option>
+                <option>Canada</option>
+            </select>
+
+            <label>Address</label>
+
+            <textarea rows="4" name="Address" placeholder="Enter address"></textarea>
+
+            <button type="submit">Register</button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
