@@ -18,7 +18,7 @@ private RegisterRepository repo;
 	@Autowired
 	private UserRepo userRepo;
 	
-	@GetMapping("/form")
+	@GetMapping("/")
 public String showForm(Model model)
 {
 		model.addAttribute("register", new Register());
